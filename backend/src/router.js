@@ -1,6 +1,6 @@
 const express = require('express');
 const tasksController = require('./controllers/tasksController');
-const taskMiddleware = require('./middlewares/taskMiddleware');
+const tasksMiddleware = require('./middlewares/tasksMiddleware');
 
 const router = express.Router();
 
@@ -9,11 +9,11 @@ router.get('/', (_req, res) => {
 });
 
 router.get('/tasks', tasksController.getAll);
-router.post('/tasks', taskMiddleware.validateFieldTitle, tasksController.createTask);
+router.post('/tasks', tasksMiddleware.validateFieldTitle, tasksController.createTask);
 router.delete('/tasks/:id', tasksController.deleteTask);
 router.put('/tasks/:id',
-  taskMiddleware.validateFieldTitle,
-  taskMiddleware.validadeFieldStatus,
+  tasksMiddleware.validateFieldTitle,
+  tasksMiddleware.validadeFieldStatus,
   tasksController.updateTask
 );
 
