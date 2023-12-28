@@ -1,0 +1,60 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  td, th {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+  td {
+    color: $describe-color;
+    font-weight: 600;
+  }
+
+  tr:nth-child(even) {
+    background-color: $gray-color;
+  }
+
+  select {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: $primary-border-radius;
+    font-weight: 600;
+    text-transform: capitalize;;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #ddd;
+    outline: none;
+    cursor: pointer;
+  }
+
+  select:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-action {
+    border: none;
+    border-radius: $secondary-border-radius;
+    padding: 5px;
+    color: $white-color;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .btn-action:nth-child(1) {
+    background-color: #ffbc7e;
+    margin-right: 5px;
+  }
+
+  .btn-action:nth-child(2) {
+    background-color: rgb(248, 104, 104);
+  }
+
+  .btn-action:hover {
+    opacity: 0.8;
+  }
+}

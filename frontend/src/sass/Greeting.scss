@@ -1,0 +1,18 @@
+#greeting-date {
+  color: $black-color;
+  width: 90%;
+  margin: 40px auto;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    color: $describe-color;
+    margin-left: 35px;
+  }
+}
