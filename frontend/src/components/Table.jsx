@@ -42,7 +42,7 @@ function Table({ tasks, setTasks }) {
   };
 
   return (
-    <div>
+    <div style={{ overflowX: 'auto' }}>
       <table>
 
         <thead>

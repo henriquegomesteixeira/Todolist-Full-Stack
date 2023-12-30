@@ -6,6 +6,7 @@ table {
     padding: 10px 15px;
     border: 1px solid #ddd;
     text-align: center;
+    min-width: 160px;
   }
 
   td {
@@ -15,6 +16,20 @@ table {
 
   tr:nth-child(even) {
     background-color: $gray-color;
+  }
+
+  input {
+    background-color: $gray-color;
+    width: 100%;
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: $secondary-border-radius;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 15px;
+    border: 1px solid #ddd;
   }
 
   select {
@@ -56,5 +71,11 @@ table {
 
   .btn-action:hover {
     opacity: 0.8;
+  }
+
+  @media screen and (max-width: 400px) {
+    td, th, input, select {
+      font-size: 14px;
+    }
   }
 }

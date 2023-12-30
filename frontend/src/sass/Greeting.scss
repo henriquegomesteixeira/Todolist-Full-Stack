@@ -15,4 +15,18 @@
     color: $describe-color;
     margin-left: 35px;
   }
+
+  @media screen and (max-width: 470px) {
+    h1 {
+      font-size: 30px;
+      text-align: center;
+      margin: 0;
+    }
+
+    p {
+      font-size: 14px;
+      text-align: center;
+      margin: 0;
+    }
+  }
 }

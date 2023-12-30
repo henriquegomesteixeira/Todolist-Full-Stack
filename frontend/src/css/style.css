@@ -33,6 +33,18 @@
   color: rgb(117, 117, 117);
   margin-left: 35px;
 }
+@media screen and (max-width: 470px) {
+  #greeting-date h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+  }
+  #greeting-date p {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+  }
+}
 
 #add-form {
   display: flex;
@@ -68,6 +80,11 @@
 #add-form #add-button:hover {
   opacity: 0.8;
 }
+@media screen and (max-width: 470px) {
+  #add-form #input-task {
+    font-size: 14px;
+  }
+}
 
 table {
   border-collapse: collapse;
@@ -77,6 +94,7 @@ table td, table th {
   padding: 10px 15px;
   border: 1px solid #ddd;
   text-align: center;
+  min-width: 160px;
 }
 table td {
   color: rgb(117, 117, 117);
@@ -84,6 +102,19 @@ table td {
 }
 table tr:nth-child(even) {
   background-color: rgb(245, 244, 246);
+}
+table input {
+  background-color: rgb(245, 244, 246);
+  width: 100%;
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 15px;
+  border: 1px solid #ddd;
 }
 table select {
   width: 100%;
@@ -119,6 +150,11 @@ table .btn-action:nth-child(2) {
 }
 table .btn-action:hover {
   opacity: 0.8;
+}
+@media screen and (max-width: 400px) {
+  table td, table th, table input, table select {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
