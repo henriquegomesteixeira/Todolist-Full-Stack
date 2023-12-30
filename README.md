@@ -128,37 +128,23 @@ Ao se conectar com uma API de backend, este frontend possibilita a comunicação
 - Node.js instalado
 - API de Backend (localizada em `http://localhost:3333/tasks`) em execução para armazenar/recuperar tarefas
 
-### Instalação
+### Configuração e Uso Local
 
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/seu-nome-de-usuario/aplicativo-lista-tarefas.git
-   ```
-
-2. Navegue até o diretório do projeto:
-
-   ```bash
-   cd aplicativo-lista-tarefas
-   ```
-
-3. Instale as dependências:
+1. Instale as dependências:
 
    ```bash
    npm install
    ```
 
-### Uso
-
-1. Inicie a aplicação React:
+2. Inicie a aplicação React:
 
    ```bash
    npm start
    ```
 
-2. Certifique-se de que a API de backend está em execução em `http://localhost:3333/tasks`.
+3. Certifique-se de que a API de backend está em execução em `http://localhost:3333/tasks`.
 
-3. Acesse o aplicativo em um navegador da web em `http://localhost:3000`.
+4. Acesse o aplicativo em um navegador da web em `http://localhost:3000`.
 
 ### Estrutura de Arquivos
 
